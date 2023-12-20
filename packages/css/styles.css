@@ -293,6 +293,10 @@ img {
   row-gap: 1rem;
 }
 
+hr {
+  border: 1px dashed var(--first-color);
+}
+
 .home__social-icon {
   font-size: 1.25rem;
   color: var(--first-color);
@@ -491,6 +495,7 @@ img {
 }
 
 .skills__titles {
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
   margin-bottom: var(--mb-0-5);
