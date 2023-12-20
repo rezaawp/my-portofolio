@@ -1037,19 +1037,21 @@ hr {
   background-color: var(--text-color-light);
 }
 
+@media screen and (max-width: 576px) {
+  .qualification__sections {
+    display: grid;
+    grid-template-columns: 0.6fr;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media screen and (max-width: 380px) {
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
-  }
-
-  .qualification__sections {
-    display: grid;
-    grid-template-columns: 0.6fr;
-    justify-content: center;
-    margin-bottom: 20px;
   }
 
   .nav__menu {
