@@ -817,11 +817,16 @@ hr {
 /*==================== PROJECT IN MIND ====================*/
 .project {
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .project__bg {
   background-color: var(--first-color-second);
   padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 90%;
+  border-radius: 30px;
 }
 
 .project__title {
@@ -913,6 +918,7 @@ hr {
   background-color: var(--input-color);
   border-radius: 0.5rem;
   padding: 0.75rem 1rem 0.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .contact__label {
@@ -929,6 +935,7 @@ hr {
   border: none;
   outline: none;
   padding: 0.25rem 0.5rem 0.5rem 0;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
 }
 
 /*==================== FOOTER ====================*/
@@ -1032,10 +1039,17 @@ hr {
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 540px) {
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
+  }
+
+  .qualification__sections {
+    display: grid;
+    grid-template-columns: 0.6fr;
+    justify-content: center;
+    margin-bottom: 20px;
   }
 
   .nav__menu {
